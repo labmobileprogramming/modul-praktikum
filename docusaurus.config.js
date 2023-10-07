@@ -45,7 +45,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
+      },
+      image: 'img/lab-mobile-social-card.jpg',
       navbar: {
         title: 'Modul Online LAB Mobile Programming',
         logo: {
@@ -58,12 +63,6 @@ const config = {
             sidebarId: 'mobileProgramming',
             position: 'left',
             label: 'Praktikum Mobile Programming 2023',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'sistemEmbedded',
-            position: 'left',
-            label: 'Praktikum Sistem Embedded 2023',
           },
           {
             href: 'https://github.com/labmobileprogramming',
