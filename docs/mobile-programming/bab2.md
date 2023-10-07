@@ -136,10 +136,12 @@ const styles = StyleSheet.create({
 
 Komponen ini berguna menampilkan berbagai jenis gambar, termasuk gambar dari internet, sumber daya statis, gambar lokal sementara, dan gambar dari disk lokal, seperti rol kamera. Layout bekerja secara berbeda untuk gambar yang diunduh dari web dan yang diimpor sebagai file.
 
-**a.** Gambar yang diimpor
+**a. Gambar yang diimpor**
+
 File gambar akan dipindai pada waktu pembuatan, dan dimensi gambar disertakan sebagai metadata dalam bundel aplikasi. Dimensi komponen Image kemudian diatur ke dimensi gambar secara default.
 
-**b.** Gambar dari web
+**b. Gambar dari web**
+
 Dimensi gambar tidak diketahui pada waktu pembuatan, sehingga lebar dan tinggi Komponen Image diatur ke 0 secara default. Agar gambar muncul di layar, kita perlu mengatur lebar dan tinggi atau nilai fleksibel dalam style Image. Jika dimensi diketahui sebelumnya, maka dimensi tersebut dapat diteruskan di prop sumber bersama dengan uri.
 Contoh penulisan kode menggunakan komponen Image adalah sebagai berikut :
 
@@ -674,13 +676,15 @@ const category = StyleSheet.create({
     borderRadius: 25,
     alignItems: 'center',
     backgroundColor: colors.grey(0.08),
+    marginHorizontal:5
   },
   title: {
     fontFamily: fontType['Pjs-SemiBold'],
     fontSize: 14,
     lineHeight: 18,
+    color: colors.grey(),
   },
-});
+})
 ```
 
 ### 19. Buat komponen baru dengan nama ListBlog seperti kode berikut
