@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Modul Online LAB Mobile Programming',
+  title: 'Modul Online Laboratorium Mobile Programming',
 
   url: 'https://modul-praktikummobile.vercel.app',
   baseUrl: '/',
@@ -50,10 +50,11 @@ const config = {
       },
       image: 'img/lab-mobile-social-card.jpg',
       navbar: {
-        title: 'Modul Online LAB Mobile Programming',
+        title: 'Modul Online Laboratorium Mobile Programming',
         logo: {
           alt: 'Lab Mobile',
-          src: 'img/logo-lab-mobile-programming.png',
+          src: 'img/logo-lab-mobile-programming-black.png',
+          srcDark : 'img/logo-lab-mobile-programming.png'
         },
         items: [
           {
@@ -68,7 +69,7 @@ const config = {
         style: 'light',
         links: [
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} LAB Mobile Programming`,
+        copyright: `Copyright © ${new Date().getFullYear()} Laboratorium Mobile Programming`,
       },
       prism: {
         theme: lightCodeTheme,

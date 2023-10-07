@@ -667,6 +667,20 @@ const styles = StyleSheet.create({
     gap: 10,
   },
 });
+const category = StyleSheet.create({
+  item: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 25,
+    alignItems: 'center',
+    backgroundColor: colors.grey(0.08),
+  },
+  title: {
+    fontFamily: fontType['Pjs-SemiBold'],
+    fontSize: 14,
+    lineHeight: 18,
+  },
+});
 ```
 
 ### 19. Buat komponen baru dengan nama ListBlog seperti kode berikut

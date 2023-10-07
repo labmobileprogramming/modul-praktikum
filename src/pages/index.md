@@ -1,11 +1,18 @@
 ---
-title: Modul Online - LAB Mobile Programming
+title: Modul Online - Laboratorium Mobile Programming
 ---
 
-# Modul Online - LAB Mobile Programming
+# Modul Online - Laboratorium Mobile Programming
+**Dosen Pengampu Mata Kuliah Mobile Programming:**
+1. Bapak Ahmad Faisol, S.T., M.T. 
+2. Ibu Nurlaily Vendyansyah, S.T., M.T.
+---
 
-Dibuat untuk menunjang kegiatan Praktikum.
+Dibuat untuk menunjang kegiatan Praktikum. 
 
-dibuat dengan dengan Docusaurus, dan di host dengan Vercel.
+Dilarang keras untuk mengcopy atau menduplikasi tanpa se-izin laboratorium mobile programming.
+
+Modul ini dibuat oleh :
+**Miftakhussurur Al Maliki - Koordinator Praktikum Mobile Programming 2023**
 
 ---
