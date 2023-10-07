@@ -32,7 +32,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/labmobileprogramming/modul-praktikum',
+            'https://github.com/labmobileprogramming/modul-praktikum/blob/main',
         },
         blog: false,
         theme: {
