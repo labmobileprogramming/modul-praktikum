@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Modul Online LAB Mobile Programming',
 
-  url: 'https://modulpraktikummobile.vercel.app',
+  url: 'https://modul-praktikummobile.vercel.app',
   baseUrl: '/',
 
   // GitHub pages deployment config.
