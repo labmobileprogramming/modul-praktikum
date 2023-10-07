@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Modul Online LAB Mobile Programming',
 
-  url: 'https://labmobileprogramming.github.io',
-  baseUrl: '/labmobileprogramming',
+  url: 'https://modulpraktikummobile.vercel.app',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -31,8 +31,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/labmobileprogramming/modul-praktikum/blob/main',
         },
         blog: false,
         theme: {
@@ -63,11 +61,6 @@ const config = {
             sidebarId: 'mobileProgramming',
             position: 'left',
             label: 'Praktikum Mobile Programming 2023',
-          },
-          {
-            href: 'https://github.com/labmobileprogramming',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },

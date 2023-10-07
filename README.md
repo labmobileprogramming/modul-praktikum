@@ -24,4 +24,4 @@ Perintah ini akan menggenerasi konten ke dalam folder `build`, yang bisa di serv
 
 ### Deployment
 
-Untuk deployment pada Github, kami menggunakan 2 repository, repo ini digunakan khusus untuk menyimpan folder project Docusaurus. sedangkan yang akan menyimpan file static `build` yang akan di *serve* adalah repository `https://github.com/labmobileprogramming/labmobileprogramming`
+Untuk deployment  kami menggunakan vercel, repo ini digunakan khusus untuk menyimpan folder project Docusaurus.
