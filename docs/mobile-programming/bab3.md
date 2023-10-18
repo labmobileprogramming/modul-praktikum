@@ -6,9 +6,9 @@ sidebar_position: 4
 
 ## 3.1 Tujuan Pembelajaran
 
-1. Mahasiswa dapat memahami konsep state dan props
-2. Mahasiswa dapat mengimplementasikan state dan props
-3. Mahasiswa dapat membuat komponen dengan state dan props
+1.	Mahasiswa dapat memahami konsep state dan props
+2.	Mahasiswa dapat mengimplementasikan state dan props
+3.	Mahasiswa dapat membuat komponen dengan state dan props
 
 ## 3.2 Software yang di butuhkan
 
@@ -21,10 +21,9 @@ sidebar_position: 4
 
 ## 3.3 Props
 
-Sebagian besar komponen dapat dikustomisasi saat dibuat, dengan parameter berbeda. Parameter yang dibuat ini disebut props, props singkatan dari properties adalah cara untuk mengirimkan data dari komponen induk (parent component) ke komponen anak (child component) dalam React Native. Props dapat digunakan untuk mengirimkan data seperti string, angka, objek, array, dan lain-lain. Komponen yang menerima props bersifat read-only, artinya tidak dapat mengubah nilai prop yang diterima.
+Sebagian besar komponen dapat dikustomisasi saat dibuat, dengan parameter berbeda. Parameter yang dibuat ini disebut props, props singkatan dari properties adalah cara untuk mengirimkan data dari komponen induk (parent component) ke komponen anak (child component) dalam React Native. Props dapat digunakan untuk mengirimkan data seperti string, angka, objek, array, dan lain-lain. Komponen yang menerima props bersifat read-only, artinya tidak dapat mengubah nilai prop yang diterima. 
 
 **Contoh :**
-
 ```jsx
 import React from 'react';
 import {Image} from 'react-native';
@@ -40,16 +39,14 @@ const Bananas = () => {
 
 export default Bananas;
 ```
-
 **Penjelasan :**
 
-Pada kode diatas kurung kurawal {pic} ini menyematkan variabel pic ke dalam JSX. Kurung kurawal pada JSX berguna untuk menempatkan ekspresi JavaScript.
+Pada kode diatas kurung kurawal {pic} ini menyematkan variabel pic ke dalam JSX. Kurung kurawal pada JSX berguna untuk menempatkan ekspresi JavaScript. 
 Komponen yang kita buat sendiri juga dapat menggunakan props. Ini memungkinkan untuk membuat satu komponen yang digunakan di banyak tempat berbeda di aplikasi yang kita buat, dengan properti yang sedikit berbeda di setiap tempat dengan mengacu pada props dari fungsi yang di render.
 
 **Penggunaan Props :**
 
 1. Membuat prop di komponen anak dengan menyertakan parameter dalam fungsi komponen tersebut. Misalnya:
-
 ```jsx
 import React from 'react';
 import { View, Text } from 'react-native';
@@ -64,8 +61,7 @@ const MyComponent = (props) => {
 export default MyComponent;
 ```
 
-2. Mengirim prop dari komponen induk ke komponen anak, cukup set properti dengan nilai yang sesuai saat menggunakan komponen tersebut di komponen induk. Misalnya:
-
+2.	Mengirim prop dari komponen induk ke komponen anak, cukup set properti dengan nilai yang sesuai saat menggunakan komponen tersebut di komponen induk. Misalnya:
 ```jsx
 import React from 'react';
 import MyComponent from './MyComponent';
@@ -82,11 +78,10 @@ export default App;
 
 ## 3.4 State
 
-State adalah cara untuk menyimpan data yang berubah di dalam komponen. State memberikan komponen kemampuan untuk "mengingat" data. Ketika state diubah, komponen akan diperbarui dan tampilan akan diperbarui sesuai dengan data yang berubah dari waktu ke waktu atau berasal dari interaksi pengguna. State digunakan untuk data yang akan berubah dan mempengaruhi tampilan komponen.
+State adalah cara untuk menyimpan data yang berubah di dalam komponen. State memberikan komponen kemampuan untuk "mengingat" data. Ketika state diubah, komponen akan diperbarui dan tampilan akan diperbarui sesuai dengan data yang berubah dari waktu ke waktu atau berasal dari interaksi pengguna. State digunakan untuk data yang akan berubah dan mempengaruhi tampilan komponen. 
 Sebagai aturan umum, gunakan prop untuk mengkonfigurasi komponen saat merender. Gunakan state untuk melacak data komponen yang diharapkan berubah dari waktu ke waktu.
 
 **Contoh :**
-
 ```jsx
 import React, {useState} from 'react';
 import {Button, Text, View} from 'react-native';
@@ -121,22 +116,21 @@ const Cafe = () => {
 
 export default Cafe;
 ```
+**Penjelasan : **
 
-**Penjelasan :**
+Kode di atas terdiri dari dua komponen, yaitu "Cat" dan "Cafe". Komponen "Cat" adalah komponen yang menerima prop "name" untuk menampilkan nama kucing dan menggunakan useState Hook untuk mengatur state "isHungry" yang awalnya bernilai "true" untuk menunjukkan bahwa kucing dalam keadaan lapar. Komponen ini juga memiliki tombol yang ketika ditekan akan mengubah state "isHungry" menjadi "false", menandakan bahwa kucing telah diberi makan. Tombol tersebut hanya dapat diaktifkan jika kucing sedang lapar. Di komponen "Cafe", komponen "Cat" dua instansi dari dirender dengan memberikan nama masing-masing. 
 
-Kode di atas terdiri dari dua komponen, yaitu "Cat" dan "Cafe". Komponen "Cat" adalah komponen yang menerima prop "name" untuk menampilkan nama kucing dan menggunakan useState Hook untuk mengatur state "isHungry" yang awalnya bernilai "true" untuk menunjukkan bahwa kucing dalam keadaan lapar. Komponen ini juga memiliki tombol yang ketika ditekan akan mengubah state "isHungry" menjadi "false", menandakan bahwa kucing telah diberi makan. Tombol tersebut hanya dapat diaktifkan jika kucing sedang lapar. Di komponen "Cafe", komponen "Cat" dua instansi dari dirender dengan memberikan nama masing-masing.
-
-**Penggunaan State :**
+**Penggunaan State : **
 
 ![Alt text](./bab3_image/image.png)
 
 ## 3.5 Langkah – langkah praktikum
 
-### 1. Buka kembali project dari bab sebelumnya pada Visual Sudio Code
+### 1. Buka kembali project dari bab sebelumnya pada Visual Sudio Code.
 
 ![Alt text](./bab3_image/image-1.png)
 
-### 2. Lalu jalankan project dengan perintah berikut
+### 2. Lalu jalankan project dengan perintah berikut.
 
 ```bash
 npx react-native run-android
@@ -146,7 +140,7 @@ npx react-native run-android
 
 ![Alt text](./bab3_image/image-2.png)
 
-### 4. Buat file baru pada folder project dengan nama data.js lalu masukkan kode berikut
+### 4. Buat file baru pada folder project dengan nama data.js lalu masukkan kode berikut.
 
 ```js
 export const CategoryList = [
@@ -287,7 +281,7 @@ export const BlogList = [
 ];
 ```
 
-### 5. Untuk membuat State, perlu mengimport useState dari React. Ubah import pada App.js menjadi seperti kode dibawah ini
+### 5. Untuk membuat State, perlu mengimport useState dari React. Ubah import pada App.js menjadi seperti kode dibawah ini.
 
 ```jsx
 import React, {useState} from 'react';
@@ -307,7 +301,7 @@ import { fontType, colors } from './src/theme';
 npm i react-native-fast-image
 ```
 
-### 8. Lalu buat komponen untuk ListHorizontal seperti kode berikut
+### 8. Lalu buat komponen untuk ListHorizontal seperti kode berikut.
 
 ```jsx
 import {StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
@@ -415,7 +409,7 @@ const itemHorizontal = StyleSheet.create({
 });
 ```
 
-### 9. Lalu buat komponen ItemSmall seperti kode berikut
+### 9. Lalu buat komponen ItemSmall seperti kode berikut.
 
 ```jsx
 import {StyleSheet, Text, View} from 'react-native';
@@ -516,25 +510,24 @@ const styles = StyleSheet.create({
 });
 ```
 
-### 10. Tambahkan juga file baru dengan nama index.js di dalam folder _components_
+### 10.	Tambahkan juga file baru dengan nama index.js di dalam folder _components_.
 
 ![Alt text](./bab3_image/image-4.png)
 
-### 11. Masukkan kode berikut pada index.js tersebut
-
+### 11.	Masukkan kode berikut pada index.js tersebut
 ```jsx
 import ItemSmall from './ItemSmall'
 import ListHorizontal from './ListHorizontal'
 export {ItemSmall, ListHorizontal}
 ```
 
-### 12. Panggil komponen ItemSmall dan ListHorizontal yang sudah dibuat tadi pada bagian _import_ App.js
+### 12.	Panggil komponen ItemSmall dan ListHorizontal yang sudah dibuat tadi pada bagian _import_ App.js
 
 ```jsx
 import { ListHorizontal, ItemSmall } from './src/components';
 ```
 
-### 13. Selanjutnya buat komponen ItemCategory diluar komponen App, seperti kode berikut
+### 13.	Selanjutnya buat komponen ItemCategory diluar komponen App, seperti kode berikut.
 
 ```jsx
 const ItemCategory = ({item, onPress, color}) => {
@@ -548,7 +541,7 @@ const ItemCategory = ({item, onPress, color}) => {
 };
 ```
 
-### 14. Lalu buat juga komponen FlatListCategory dibawah ItemCategory seperti kode berikut
+### 14.	Lalu buat juga komponen FlatListCategory dibawah ItemCategory seperti kode berikut.
 
 ```jsx
 const FlatListCategory = () => {
@@ -577,7 +570,7 @@ const FlatListCategory = () => {
 };
 ```
 
-### 15. Ubah komponen dari ListBlog yang sudah dibuat pada pertemuan sebelumnya menjadi seperti berikut
+### 15.	Ubah komponen dari ListBlog yang sudah dibuat pada pertemuan sebelumnya menjadi seperti berikut.
 
 ```jsx
 const ListBlog = () => {
@@ -598,7 +591,7 @@ const ListBlog = () => {
 };
 ```
 
-### 16. Ubah juga komponen App menjadi seperti berikut
+### 16.	Ubah juga komponen App menjadi seperti berikut.
 
 ```jsx
 export default function App() {
@@ -617,7 +610,7 @@ export default function App() {
 }
 ```
 
-### 17. Terakhir ubah stylesheet seperti kode berikut
+### 17.	Terakhir ubah stylesheet seperti kode berikut.
 
 ```jsx
 const styles = StyleSheet.create({
@@ -669,7 +662,7 @@ const category = StyleSheet.create({
 });
 ```
 
-### 18. Jika sudah hasilnya seperti gambar berikut
+### 18.	Jika sudah hasilnya seperti gambar berikut
 
 ![Alt text](./bab3_image/image-5.png)
 

@@ -187,4 +187,4 @@ Tunggu prosesnya hingga selesai, mungkin akan memakan waktu karena harus melakuk
 
 ## 1.5 Tugas Praktikum
 
-Silahkan buat Langkah-langkah menginstall react native seperti yang sudah dicontohkan pada saat praktikum!
+Silahkan buat Langkah-langkah menginstall react native seperti yang sudah dicontohkan pada saat praktikum! Dan upload tugas tersebut ke github!

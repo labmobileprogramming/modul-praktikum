@@ -594,7 +594,7 @@ npx react-native run-android
 ```jsx
 import React from 'react';
 import {ScrollView, StyleSheet,  Text, View, Image, ImageBackground} from 'react-native';
-import {Notification, Receipt21, Clock, Message} from 'iconsax-react-native';
+import {Element3, Receipt21, Clock, Message} from 'iconsax-react-native';
 import { fontType, colors } from './src/theme';
 ```
 
@@ -606,7 +606,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>WOCO.</Text>
-        <Notification color={colors.black()} variant="Linear" size={24} />
+        <Element3 color={colors.black()} variant="Linear" size={24} />
       </View>
       <View style={styles.listCategory}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -1202,4 +1202,4 @@ const itemHorizontal = StyleSheet.create({
 
 ## 2.6 Tugas Praktikum
 
-Silahkan buat halaman awal dengan menerapkan komponen pada aplikasi masing-masing sesuai tema yang sudah ditentukan!
+Silahkan buat halaman awal dengan menerapkan komponen pada aplikasi masing-masing sesuai tema yang sudah ditentukan! Dan upload tugas tersebut ke github!
