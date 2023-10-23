@@ -194,11 +194,11 @@ npx react-native run-android
 
 ![Alt text](./bab4_image/image-3.png)
 
-### 6.	Jika sudah, Ubah nama komponen yang awalnya App menjadi Home, seperti gambar berikut.
+### 6.	Jika sudah, Ubah nama komponen yang awalnya App menjadi Home, di file index.js pada folder Home seperti gambar berikut.
 
 ![Alt text](./bab4_image/image-4.png)
 
-### 7.	Selanjutnya ubah, directory dari import komponen yang digunakan seperti berikut.
+### 7.	Selanjutnya ubah, directory dari import komponen yang digunakan di file index.js pada folder Home seperti berikut.
 
 ```jsx
 import {BlogList, CategoryList} from '../../../data';
