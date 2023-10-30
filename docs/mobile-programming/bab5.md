@@ -461,7 +461,7 @@ const navigation = useNavigation();
 
 ### 20. Tambahkan fungsi onPress pada _TouchableOpacity_ yang baru saja diubah seperti kode berikut.
 ```jsx
-<TouchableOpacity style={styles.cardItem} onPress={() => navigation.navigate('BlogDetail', {blogId: item.id})}>
+<TouchableOpacity style={itemHorizontal.cardItem} onPress={() => navigation.navigate('BlogDetail', {blogId: item.id})}>
 ```
 
 ### 21.	Buka juga komponen ItemBookmark tambahkan juga import berikut.
