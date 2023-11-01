@@ -725,7 +725,7 @@ export default function App() {
 
 ![Alt text](./bab4_image/image-8.png)
 
-### 19.	Selanjutnya, tambahkan ProfileData pada data.js seperti kode berikut.
+### 20.	Selanjutnya, tambahkan ProfileData pada data.js seperti kode berikut.
 ```jsx
 export const ProfileData = {
   profilePict:
@@ -738,7 +738,7 @@ export const ProfileData = {
 };
 ```
 
-### 20.	Buka file index.js pada folder Profile lalu masukkan kode berikut.
+### 21.	Buka file index.js pada folder Profile lalu masukkan kode berikut.
 ```jsx
 import {ScrollView, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {Setting2} from 'iconsax-react-native';
@@ -882,7 +882,7 @@ const profile = StyleSheet.create({
 });
 ```
 
-### 21.	Untuk sementara kita bisa melihat hasilnya dengan mengganti kode pada App.js sepeti kode berikut.
+### 22.	Untuk sementara kita bisa melihat hasilnya dengan mengganti kode pada App.js sepeti kode berikut.
 
 ```jsx
 import * as React from 'react';
@@ -891,7 +891,7 @@ export default function App() {
   return <Profile />;
 }
 ```
-### 22.	Maka akan tampil hasil seperti berikut.
+### 23.	Maka akan tampil hasil seperti berikut.
 
 ![Alt text](./bab4_image/image-9.png)
 
