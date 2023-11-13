@@ -24,11 +24,11 @@ sidebar_position: 6
 Animasi adalah cara efektif untuk meningkatkan interaktivitas dan daya tarik dari aplikasi. Beberapa alasan mengapa harus mempertimbangkan penggunaan animasi dalam aplikasi React Native adalah:
 1.	Meningkatkan Pengalaman Pengguna : Animasi dapat membuat aplikasi terasa lebih hidup dan responsif, meningkatkan kesan positif pada pengguna.
 2.	Mengkomunikasikan Informasi : Animasi dapat digunakan untuk menyoroti perubahan status atau perpindahan antar elemen di dalam aplikasi.
-3.	Mempercantik Tampilan : Animasi dapat digunakan untuk membuat tampilan aplikasi Anda lebih menarik dan menawan.
+3.	Mempercantik Tampilan : Animasi dapat digunakan untuk membuat tampilan aplikasi menjadi lebih menarik dan menawan.
 
 ## 6.4 Animated
 
-Animated adalah modul yang disediakan oleh React Native untuk mengelola dan membuat animasi dalam aplikasi. Ini memungkinkan Anda untuk menganimasikan komponen dan properti elemen dengan mengubah nilai-nilai interpolasi seiring waktu. Animasi yang dihasilkan dengan menggunakan Animated berjalan secara efisien dan halus karena menggunakan "native driver" yang memanfaatkan GPU perangkat. Native driver mengacu pada metode yang digunakan untuk menjalankan animasi dengan memindahkan sebagian besar komputasi animasi ke GPU perangkat, daripada mengandalkan JavaScript Thread. Penggunaan Native Driver merupakan salah satu cara untuk meningkatkan kinerja animasi dalam aplikasi React Native. 
+Animated adalah modul yang disediakan oleh React Native untuk mengelola dan membuat animasi dalam aplikasi. Ini memungkinkan untuk menganimasikan komponen dan properti elemen dengan mengubah nilai-nilai interpolasi seiring waktu. Animasi yang dihasilkan dengan menggunakan Animated berjalan secara efisien dan halus karena menggunakan "native driver" yang memanfaatkan GPU perangkat. Native driver mengacu pada metode yang digunakan untuk menjalankan animasi dengan memindahkan sebagian besar komputasi animasi ke GPU perangkat, daripada mengandalkan JavaScript Thread. Penggunaan Native Driver merupakan salah satu cara untuk meningkatkan kinerja animasi dalam aplikasi React Native. 
 
 Animated mengekspor enam jenis komponen yang dapat dianimasikan: View, Text, Image, ScrollView, FlatList, dan SectionList, namun juga dapat membuat sendiri menggunakan Animated.createAnimatedComponent(). Alur kerja inti untuk membuat animasi adalah membuat Animated.Value, menghubungkannya ke satu atau beberapa atribut gaya komponen animasi. 
 
@@ -117,13 +117,13 @@ Dengan demikian, useRef digunakan sebagai cara untuk menginisialisasi dan mengak
 ## 6.5 Handling gesture and other events
 
 Gestures, seperti panning atau scrolling, dan peristiwa lainnya dapat langsung dipetakan ke dalam nilai-nilai animasi menggunakan Animated.event(). Ini dilakukan dengan sintaksis pemetaan terstruktur sehingga nilai-nilai dapat diekstraksi dari objek peristiwa yang kompleks. Tingkat pertama adalah array untuk memungkinkan pemetaan melintasi beberapa argumen, dan array tersebut berisi objek-objek bersarang.
-Contoh, saat bekerja dengan gesture horizontal scrolling, Anda akan melakukan hal berikut untuk memetakan event.nativeEvent.contentOffset.x ke scrollX (sebuah Animated.Value):
+Contoh, saat bekerja dengan gesture horizontal scrolling, dapat dilakukan dengan cara seperti berikut untuk memetakan event.nativeEvent.contentOffset.x ke scrollX (sebuah Animated.Value):
 
 ![Alt text](./bab6_image/image.png)
 
 ## 6.6 Interpolation
 
-Setiap properti dapat dijalankan melalui interpolasi terlebih dahulu. Interpolasi memetakan rentang masukan (input range) ke rentang keluaran (output range), biasanya menggunakan interpolasi linier tetapi juga mendukung fungsi easing. Secara default, ini akan mengekstrapolasi kurva di luar rentang yang diberikan, namun Anda juga dapat mengaturnya untuk menjepit nilai output. Pemetaan dasar untuk mengubah rentang 0-1 menjadi rentang 0-100 adalah:
+Setiap properti dapat dijalankan melalui interpolasi terlebih dahulu. Interpolasi memetakan rentang masukan (input range) ke rentang keluaran (output range), biasanya menggunakan interpolasi linier tetapi juga mendukung fungsi easing. Secara default, ini akan mengekstrapolasi kurva di luar rentang yang diberikan, namun juga dapat diatur untuk menjepit nilai output. Pemetaan dasar untuk mengubah rentang 0-1 menjadi rentang 0-100 adalah:
 
 ![Alt text](./bab6_image/image_1.png)
 
@@ -131,11 +131,11 @@ inputRange adalah kumpulan nilai yang digunakan sebagai referensi untuk menentuk
 
 outputRange adalah kumpulan nilai yang akan digunakan sebagai hasil interpolasi berdasarkan nilai masukan (input). Dalam kode diatas, outputRange adalah [0, 100], yang berarti bahwa nilai keluaran (output) akan dihasilkan dalam rentang antara 0 dan 100.
 
-Jadi, jika nilai masukan (input) yang berada dalam rentang antara 0 hingga 1, fungsi interpolate akan menghasilkan nilai keluaran (output) yang berada dalam rentang antara 0 hingga 100. Ini berarti jika nilai input 0, nilai output akan 0, dan jika Anda memberikan nilai input 1, nilai output akan 100. Jika Anda memberikan nilai input di antara 0 dan 1, nilai output akan dihitung secara proporsional berdasarkan interpolasi linier antara rentang inputRange dan outputRange.
+Jadi, jika nilai masukan (input) yang berada dalam rentang antara 0 hingga 1, fungsi interpolate akan menghasilkan nilai keluaran (output) yang berada dalam rentang antara 0 hingga 100. Ini berarti jika nilai input 0, nilai output akan 0, dan jika diberikan nilai input 1, nilai output akan 100. Jika diberikan nilai input di antara 0 dan 1, nilai output akan dihitung secara proporsional berdasarkan interpolasi linier antara rentang inputRange dan outputRange.
 
 ## 6.7 DiffClamp
 
-DiffClamp adalah fungsi yang memungkinkan Anda membatasi perubahan nilai ke dalam rentang tertentu, sambil mempertahankan perbedaan antara nilai saat ini dan nilai sebelumnya (differensiasi). Fungsi ini biasanya digunakan dalam konteks animasi atau pemrosesan data untuk mengendalikan perubahan nilai dengan cara yang lebih terkontrol. DiffClamp sering digunakan untuk memastikan bahwa nilai tertentu tidak keluar dari batas yang ditentukan. Ini berguna dalam berbagai situasi, seperti mengontrol posisi objek dalam animasi sehingga tidak melampaui batas tertentu.
+DiffClamp adalah fungsi yang memungkinkan untuk membatasi perubahan nilai ke dalam rentang tertentu, sambil mempertahankan perbedaan antara nilai saat ini dan nilai sebelumnya (differensiasi). Fungsi ini biasanya digunakan dalam konteks animasi atau pemrosesan data untuk mengendalikan perubahan nilai dengan cara yang lebih terkontrol. DiffClamp sering digunakan untuk memastikan bahwa nilai tertentu tidak keluar dari batas yang ditentukan. Ini berguna dalam berbagai situasi, seperti mengontrol posisi objek dalam animasi sehingga tidak melampaui batas tertentu.
 
 Dengan mempertahankan perbedaan antara nilai saat ini dan nilai sebelumnya, diffClamp membantu mencegah "loncatan" nilai yang tiba-tiba, yang dapat membuat animasi terlihat lebih halus. Ini menggunakan selisih antara nilai terakhir, sehingga bahkan jika nilai berada jauh dari batas, nilai akan mulai berubah ketika nilai mendekati batas tersebut lagi (nilai = clamp(nilai + selisih, min, max)).
 
